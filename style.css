@@ -1,0 +1,99 @@
+/* FONTS */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Raleway:wght@500;600;700&display=swap");
+
+html,
+body {
+  margin: 0;
+  background: linear-gradient(to right, #0f0c29, #302b63, #242439);
+}
+
+:root {
+  --primary-gradient: linear-gradient(to bottom, #ffffff, #adaddaa);
+  --label-gradient: linear-gradient(to bottom, #536452 0%, #57dd52 40%);
+}
+
+.section {
+  background: #282c34;
+  background: url("assets/Night_3.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 92vw;
+  height: 89vh;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  margin: auto;
+  margin-top: 4rem;
+  text-align: center;
+}
+
+/* NAV */
+.navbar {
+  display: grid;
+  grid-template-columns: 10% 90%;
+  margin-top: 1.5rem;
+  margin-left: 1.5rem;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.navbar h5 {
+  padding: 2rem 2rem;
+  margin: 0;
+}
+
+/* checkbox */
+.light {
+  width: 40px;
+  height: 7px;
+  background: rgb(192, 188, 188);
+  margin: 20px auto;
+  border-radius: 100px;
+  position: relative;
+}
+
+.light label {
+  display: block;
+  width: 19px;
+  height: 19px;
+  background: #44425c;
+  background: var(--label-gradient);
+  border-radius: 50px;
+  position: absolute;
+  top: -6px;
+  left: -1px;
+  box-shadow: 0px 2px 5px 0px rgb(0, 0, 0, alpha);
+  transition: all 0.5s ease;
+}
+
+.light input[type="checkbox"] {
+  position: absolute;
+  left: -8px;
+  top: -6px;
+  width: 50px;
+  opacity: 0;
+}
+
+.light input[type="checkbox"]:checked + label {
+  left: 25px;
+  background: tomato;
+}
+
+/* image */
+
+.imglayer {
+  position: relative;
+  top: -69px;
+}
+
+.imglayer img {
+  width: 59vw;
+  position: static;
+}
+
+.section h4 {
+  text-align: center;
+  font-size: 9rem;
+  margin: 0 0.3rem;
+  padding: 0;
+  margin-top: 3rem;
+  top: 200px;
+}
